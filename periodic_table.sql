@@ -57,6 +57,17 @@ CREATE TABLE public.elements (
 ALTER TABLE public.elements OWNER TO freecodecamp;
 
 --
+-- Name: my_unrelated_table; Type: TABLE; Schema: public; Owner: freecodecamp
+--
+
+CREATE TABLE public.my_unrelated_table (
+    owner character varying(255) NOT NULL
+);
+
+
+ALTER TABLE public.my_unrelated_table OWNER TO freecodecamp;
+
+--
 -- Name: properties; Type: TABLE; Schema: public; Owner: freecodecamp
 --
 
@@ -70,6 +81,16 @@ CREATE TABLE public.properties (
 
 
 ALTER TABLE public.properties OWNER TO freecodecamp;
+
+--
+-- Name: t; Type: TABLE; Schema: public; Owner: freecodecamp
+--
+
+CREATE TABLE public.t (
+);
+
+
+ALTER TABLE public.t OWNER TO freecodecamp;
 
 --
 -- Name: types; Type: TABLE; Schema: public; Owner: freecodecamp
@@ -129,6 +150,13 @@ INSERT INTO public.elements VALUES (10, 'Ne', 'Neon');
 
 
 --
+-- Data for Name: my_unrelated_table; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+--
+
+INSERT INTO public.my_unrelated_table VALUES ('REMO');
+
+
+--
 -- Data for Name: properties; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
@@ -142,6 +170,12 @@ INSERT INTO public.properties VALUES (7, 14.007, -210.1, -195.8, 2);
 INSERT INTO public.properties VALUES (8, 15.999, -218, -183, 2);
 INSERT INTO public.properties VALUES (10, 20.18, -248.6, -246.1, 2);
 INSERT INTO public.properties VALUES (9, 18.998, -220, -188.1, 2);
+
+
+--
+-- Data for Name: t; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+--
+
 
 
 --
@@ -235,3 +269,4 @@ ALTER TABLE ONLY public.properties
 --
 -- PostgreSQL database dump complete
 --
+
